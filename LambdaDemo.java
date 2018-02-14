@@ -1,17 +1,17 @@
-package trav_maivana7;
+package tsiry.dev.poc;
 
 public class LambdaDemo {
 	
 	@FunctionalInterface
-	interface Instrument {                  //une interface fonctionnelle n’est rien d’autre qu’une interface avec une seule méthode abstraite. 
+	interface Instrument {                  //une interface fonctionnelle nâ€™est rien dâ€™autre quâ€™une interface avec une seule mÃ©thode abstraite. 
 		boolean jouer(String morceau);  
 		
 	}
 
 	public static void main(String[] args) {
 	
-		//instanciation suivi de l'implémentation du fonction 
-		Instrument i = (morceau)-> {System.out.println("Jouer : " +morceau+" à la guitare");return true;};
+		//instanciation suivi de l'implÃ©mentation du fonction 
+		Instrument i = (morceau)-> {System.out.println("Jouer : " +morceau+" Ã  la guitare");return true;};
 		
 		boolean res = i.jouer("vive le vent");
 		System.out.println(res);
