@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE) // meta annotation , where we put our annotation :
 							// methode, paramater, package
-@Retention(RetentionPolicy.RUNTIME) // how long annotation is to be retained.
+@Retention(RetentionPolicy.RUNTIME) // how long annotation is to be retained
 @interface Vehicule {
 	int wheel() default 4; // annotation value
 
