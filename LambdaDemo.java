@@ -13,8 +13,8 @@ public class LambdaDemo {
 		//instanciation suivi de l'implémentation du fonction 
 		Instrument i = (morceau)-> {System.out.println("Jouer : " +morceau+" à la guitare");return true;};
 		
-		boolean res = i.jouer("vive le vent");
-		System.out.println(res);
+		i.jouer("vive le vent");
+		
 	}
 
 }
